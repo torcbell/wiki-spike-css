@@ -23,3 +23,7 @@ anticipate playing with javascript to remove the dependency on old jQuery UI.
 [http://css-spikes.dbbs.co/snap-scroll/](http://css-spikes.dbbs.co/snap-scroll/)
 
 [http://css-spikes.dbbs.co/pwa/](http://css-spikes.dbbs.co/pwa/)
+
+# Other wiki experiments
+
+[https://dobbs.github.io/wiki-21/](https://dobbs.github.io/wiki-21/)
