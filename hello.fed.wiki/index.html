@@ -8,8 +8,7 @@
   <body>
     <section class=main id=lineup></section>
     <footer id=footer>
-      Try old <a href="http://hello.fed.wiki/view/welcome-visitors">Welcome Visitors</a> site.
-      Completed checks show <span class=pass>pass</span> or <span class=fail>fail</span>
+      Visit <a href="http://viki.wiki/view/welcome-visitors">viki.wiki</a> to read and write contemporary art and systems research
     </footer>
     <script type=module>
 
@@ -20,10 +19,10 @@
       let pages = [] // {site,slug,page}...
 
       const params = new URLSearchParams(location.search)
-      const origin = params.get('site') || 'hello.fed.wiki'
+      const origin = params.get('site') || 'viki.wiki'
 
       { // launch the app with one page, typically welcome-visitors
-        const slug = params.get('slug') || 'welcome-visitors'
+        const slug = params.get('slug') || 'selected-work'
         const view = r => `${r.site==origin?'view':r.site}/${asSlug(r.page.title)}`
         const legacy = () => window.open(`http://${origin}/${lineup.map(view).join('/')}`,'_blank')
         pages = await fetch('./pages.json').then(res => res.json())
